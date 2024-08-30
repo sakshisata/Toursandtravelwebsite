@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Website</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Menu Bar Icon -->
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <!-- Logo -->
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Icons for Search and Login -->
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <!-- Search Bar -->
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+        
+    </header>
+
+    <!-- Login Form Container -->
+    <div class="login-form-container">
+        <!-- Close Button -->
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="Login Now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure is worthwhile</h3>
+            <p>Discover new places with us</p>
+            <a href="#" class="btn">Discover more</a>
+        </div>
+
+        <!-- Video Controls -->
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/video.mp4"></span>
+            <span class="vid-btn" data-src="images/video1.mp4"></span>
+            <span class="vid-btn" data-src="images/video2.mp4"></span>
+            <span class="vid-btn" data-src="images/video3.mp4"></span>
+            <span class="vid-btn" data-src="images/video4.mp4"></span>
+        </div>
+
+        <!-- Video Container -->
+        <div class="video-container">
+            <video src="images/video.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>B</span>
+            <span>O</span>
+            <span>O</span>
+            <span>K</span>
+            <span class="space"></span>
+            <span>N</span>
+            <span>O</span>
+            <span>W</span>
+        </h1>
+    
+        <div class="row">
+            <!-- Image Section -->
+            <div class="image">
+                <img src="images/booknow.jpg" alt="Book Now Image">
+            </div>
+    
+            <!-- Booking Form -->
+            <form action="">
+                <div class="inputBox">
+                    <h3>Where To</h3>
+                    <input type="text" placeholder="Place Name" required>
+                </div>
+                <div class="inputBox">
+                    <h3>How Many People</h3>
+                    <input type="number" placeholder="Number of guests" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Date of Arrival</h3>
+                    <input type="date" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Date of Leaving</h3>
+                    <input type="date" required>
+                </div>
+                <input type="submit" class="btn" value="Book Now">
+            </form>
+        </div>
+    
+    </section>
+
+    <section class="Packages" id="Packages">
+
+        <h1 class="heading">
+            <span>P</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+            <span>s</span>
+</h1>
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>Our</span> Packages
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/rishikeshimage.jpg" alt="Dehradun and Rishikesh Package">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Dehradun and Rishikesh Package</h3>
+                <p>
+                    <span class="duration">Duration: 4-5 days</span><br>
+                    <span class="highlights">Highlights: Enjoy sightseeing in Dehradun, and then head to Rishikesh for yoga, meditation, and river rafting. Explore Laxman Jhula, Ram Jhula, and the Beatles Ashram.</span><br>
+                    <span class="inclusions">Inclusions: Accommodation, transportation, guided tours, breakfast, and activities like river rafting and yoga sessions.</span><br>
+                    <span class="exclusions">Exclusions: Personal expenses, certain activity fees, travel insurance.</span>
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">9000rsPP</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/delhi-manali.png" alt="Delhi to Shimla, Kullu, Manali, Amritsar Package">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Delhi to Shimla, Kullu, Manali, Amritsar Package</h3>
+                <p>
+                    <span class="duration">Duration: 8-10 days</span><br>
+                    <span class="highlights">Highlights: Shimla: Mall Road, Kufri, Jakhoo Temple. Kullu: Kullu Valley, river rafting. Manali: Solang Valley, Rohtang Pass, Hadimba Temple. Amritsar: Golden Temple, Jallianwala Bagh, Wagah Border ceremony.</span><br>
+                    <span class="inclusions">Inclusions: Accommodation: Standard hotels or guesthouses. Meals: Breakfast and dinner. Transportation: Round-trip travel by bus or car. Sightseeing: Local attractions in Shimla, Kullu, Manali, and Amritsar.</span><br>
+                    <span class="exclusions">Exclusions: Personal Expenses: Extra meals, shopping, etc. Entry Fees: For certain attractions. Travel Insurance: Optional. Additional Activities: Adventure activities may cost extra.</span>
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">12500rsPP</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ratnagiri.webp" alt="Mumbai/Pune to Ratnagiri & Ganpatipule Package">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Mumbai/Pune to Ratnagiri & Ganpatipule Package</h3>
+                <p>
+                    <span class="duration">Duration: 3-4 days</span><br>
+                    <span class="highlights">Highlights: Ratnagiri: Ratnadurg Fort, Thibaw Palace, Ganpatipule Beach. Ganpatipule: Ganpatipule Temple, pristine beaches, local markets.</span><br>
+                    <span class="inclusions">Inclusions: Accommodation: Standard hotels or resorts in Ratnagiri and Ganpatipule. Meals: Breakfast and dinner. Transportation: Round-trip travel by car or bus. Sightseeing: Guided tours of Ratnagiri and Ganpatipule attractions.</span><br>
+                    <span class="exclusions">Exclusions: Personal Expenses: Extra meals, shopping, etc. Entry Fees: For certain attractions. Travel Insurance: Optional.</span>
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">5500rsPP</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/goa.png" alt="Bombay/Pune to Goa Package">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Bombay/Pune to Goa Package</h3>
+                <p>
+                    <span class="duration">Duration: 4-6 days</span><br>
+                    <span class="highlights">Highlights: North Goa: Beaches like Baga, Anjuna, and Calangute; Fort Aguada; Night markets. South Goa: Palolem Beach, Colva Beach, Dudhsagar Falls. Culture: Visit to Old Goa churches and Portuguese architecture.</span><br>
+                    <span class="inclusions">Inclusions: Accommodation: Standard hotels or resorts in Goa. Meals: Typically includes breakfast; some packages include lunch or dinner. Transportation: Round-trip travel by flight or train, local transport in Goa. Sightseeing: Guided tours of major attractions in Goa.</span><br>
+                    <span class="exclusions">Exclusions: Personal Expenses: Extra meals, shopping, etc. Entry Fees: For certain attractions. Travel Insurance: Optional. Additional Activities: Optional activities like water sports may cost extra.</span>
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">7500rsPP</div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Accommodation</h3>
+            <p>3-4 star hotels,guesthouses or resorts </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Food and drinks</h3>
+            <p>Typically includes breakfast; some packages include lunch or dinner</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Travelling</h3>
+            <p>According to your plan airplane,car or bus</p>
+        </div>
+    </div>
+
+    <section class="Contact" id="contact">
+
+        <h1 class="heading">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>T</span>
+            <span>A</span>
+            <span>C</span>
+            <span>T</span>
+        </h1>
+    
+        <div class="row">
+            <img src="images/contact.jpg" alt="">
+        </div>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+            <p>Location: Your Address Here</p>
+        </div>
+    
+        <div class="social-media">
+            <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About us</h3>
+                <p>we specialize in crafting unforgettable travel experiences tailored to your unique preferences. With years of expertise in the travel industry, our dedicated team is passionate about helping you explore the world, whether you're seeking a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour.</p>
+            </div>
+            <div class="box">
+                <h3> Branch location</h3>
+                <a href="#">Mumbai</a>
+                <a href="#">Ahmedabad</a>
+                <a href="#">Pune</a>
+                <a href="#">Banglore</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">Book</a>
+                <a href="#">Packages</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <h1 class="credit"> Created by <span> Sakshi sata</span> | all rights reserved |</h1>
+    </footer>
+
+
+    
+
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
